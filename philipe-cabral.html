@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1">
+        <title>Curriculo Philipe Cabral</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Sans+Display:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        
+        <style>
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+            License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+        </style>
+        <style>
+            :root {
+                --fonte-padrao: "Noto Sans Display";
+                --cor-fundo: #C0C0C0;
+                --cor-fundo-branco: #FFFFFF;;
+                --cor-texto: #F5FFFA;
+                --cor-fundo-item-titulo: #363636;
+                --cor-fundo-lado-esquerdo: #008080;
+            }
+
+            hr {
+                margin: 0.1em 0;
+            }
+
+            body {
+                font-family: var(--fonte-padrao);
+                background-color: var(--cor-fundo);
+                font-size: 16px;
+            }
+
+            .container-info-pessoais {
+                background-color: var(--cor-fundo-branco);
+                padding: 2em 0;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .lateral-direito-titulo {
+                padding: 0.5em 0;
+                margin: 0 auto;
+                font-size: 3.5em;
+                font-weight: 300;
+            }
+
+            .lista-informacoes-pessoais {
+                margin-left: auto;
+                padding: 0 1em 0 2em;
+                display: block;
+            }
+
+            .lista-informações-item {
+                font-size: 1.1em;
+                padding-top: 0.5em;
+                font-weight: 300;
+            }
+
+            .lista-lateral {
+                background-color: var(--cor-fundo-branco);
+                padding-bottom: 1em;
+
+            }
+
+            .lista-item-titulo {
+                font-size: 2em;
+                text-align: center;
+                padding: 1em 0;
+            }
+
+            .item-titulo {
+                font-size: 1.5em;
+                padding: 0.5em;
+                background-color: var(--cor-fundo-item-titulo);
+                color: var(--cor-texto);
+            }
+            .lista-item {
+                margin: 1em 1em;
+                border: 1px solid var(--cor-fundo-item-titulo);
+                border-radius: 5px;
+                padding: 1em;
+                
+            }
+
+            .lista-item-texto {
+                padding: 1em 0 1em 0.5em;
+                font-size: 1.2em;
+                font-weight: 300;
+            }
+
+            .data-cursado {
+                display: block;
+                margin-top: 0.5em;
+                margin-right: 0.5em;
+                text-align: end;
+            }
+            .fa {
+                padding: 0 0.7em;
+            }
+
+            .lista-lateral-link {
+                color: var(--cor-fundo-item-titulo);
+            }
+
+            .lista-lateral-competencias {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                background-color: var(--cor-fundo-branco);
+                padding: 1em 0;
+            }
+
+            .lista-item-titulo-competencias {
+                background-color: var(--cor-fundo-branco);
+            }
+
+
+            .lista-lateral-competencias > .lista-item  {
+                color: var(--cor-texto);
+                background-color: var(--cor-fundo-item-titulo);
+            }
+
+            .item-idioma {
+                display: flex;
+                margin: 2em 1em;
+            }
+
+            .item-obs {
+                display: inline;
+                margin-left: auto;
+            }
+
+            .lista-lateral-link {
+                display: flex;
+                text-decoration: none;
+                align-items: center;
+            }
+
+            .item-horas {
+                margin-left: auto;
+                padding-left: 0.6em;
+                border-left: 1px solid var(--cor-fundo-item-titulo);
+            }
+
+            .lateral-direito-titulo-tela-maior {
+                display: none;
+            }
+
+            .rodape {
+                margin-bottom: auto;
+
+            }
+
+            .rodape-titulo {
+                padding: 1em 0;
+                text-align: center;
+                color: var(--cor-fundo-item-titulo);
+            }
+        
+            @media screen and (min-width: 720px){
+
+                body {
+                    font-size: 14px;
+                    background-color: var(--cor-fundo-branco);
+                }
+
+                .quebra-linha {
+                    display: none;
+                }
+
+                .lateral-direito-titulo {
+                    display: none;
+                }
+
+                .lateral-direito-titulo-tela-maior {
+                    display: block;
+                    padding: 0.5em 0;
+                    margin: 0 auto;
+                    font-size: 3.5em;
+                    font-weight: 300;
+                }
+
+                .container-principal {
+                    display: flex;
+                }
+                .container-lateral-direita {
+                    display: flex;
+
+                }
+
+                .info-lateral-direito {
+                    width: 70vw;
+                }
+
+                .info-lateral-esquerdo {
+                    width: 30vw;
+                    
+                }
+                .lista-lateral-tela-maior {
+                   width: 100vw;
+                }
+
+                .lista-lateral-esquerda {
+                    background-color: var(--cor-fundo-lado-esquerdo);
+                }
+
+                
+                .lista-item-titulo-tela-maior {
+                    font-size: 1.4em;
+                    font-weight: 300;
+                    color: var(--cor-texto);
+                    text-align: start;
+                    padding: 0.3em 0 0.3em 1em;
+                    margin-bottom: 1em;
+
+                }
+
+                .lista-item-titulo-competencias {
+                    text-align: start;
+                    font-weight: 300;
+                    font-size: 1.5em;
+                    color: var(--cor-texto);
+                    padding-left: 1em;
+                    background-color: var(--cor-fundo-lado-esquerdo);
+                }
+
+              
+
+                .lista-item {
+                    margin: 0.2em 0.2em;
+                    border: 0px solid var(--cor-fundo-item-titulo);
+                    padding: 1em;
+                
+                }
+
+                .item-idioma {
+                    font-weight: 300;
+                    padding-left: 1em;
+                    margin: 1em;
+                    color: var(--cor-texto);
+                }
+
+                .lista-lateral-link {
+                    font-weight: 300;
+                    color: var(--cor-texto);
+                    display: inline;
+                }
+
+                .lista-item-cell {
+                    font-weight: 300;
+                    color: var(--cor-texto);
+                }
+             
+                .item-horas {
+                   display: none;
+                }
+
+
+                .rodape {
+                    margin-bottom: auto;
+                    background-color: var(--cor-fundo-lado-esquerdo);
+
+                }
+
+                .rodape-titulo {
+                    color: var(--cor-texto);
+                }
+
+               
+
+            }
+        </style>
+    </head>
+    <body>
+        <main class="container-principal">
+            <section class="info-lateral-direito">
+
+                <header class="container-info-pessoais">
+                    <h1 class="lateral-direito-titulo">Philipe Cabral</h1>
+                    <h1 class="lateral-direito-titulo-tela-maior">Philipe Borges Cabral de Faria</h1>
+                    <ul class="lista-informacoes-pessoais">
+                        <li class="lista-informações-item">Nascido em 30/11/1995 - 27 anos</li>
+                        <li class="lista-informações-item">Moro em: Bom Jesus dos Perdões</li>
+                    </ul>
+                </header>
+    
+                <hr class="quebra-linha">
+    
+                <div class="container-lateral-direita">
+                    <ul class="lista-lateral lista-lateral-tela-maior">
+                        <li class="lista-item-titulo"> Experiências Profissionais </li>
+        
+                        <li class="lista-item">
+        
+                            <h2 class="item-titulo">Cargo: Desenvolvedor Front/Back-end</h2>
+        
+                            <p class="lista-item-texto">
+                                FREELANCER<br/><br/>
+                                efetuando manutenções em: <br/>HTML, CSS, JAVASCRIPT, JQUERY, C# MYSQL. 
+                                <hr/>
+                                <data class="data-cursado">( nov de 2022 - atualmente 2023 ): 4 meses</data>
+                            </p>
+                        </li>     
+                        <li class="lista-item">
+        
+                            <h2 class="item-titulo">Cargo: Líder - Outsourcing de Impressão</h2>
+        
+                            <p class="lista-item-texto">
+                                Empresa: COLORSISTHEM DO BRASIL<br/><br/>
+                                Atuando em: liderança de projeto, prestando suporte help desk aos usuarios no uso dos equipamentos de impressão.
+                                <hr/>
+                                <data class="data-cursado">( jun de 2020 - nov de 2022) : 2 anos 6 meses</data>
+                            </p>
+                        </li>   
+                        <li class="lista-item">
+        
+                            <h2 class="item-titulo">Cargo: Operador de Site - Impressoras</h2>
+                            
+                            <p class="lista-item-texto">
+                                Empresa: Tecnoset<br/><br/>
+                                Atuando em: suporte de primeiro nível aos usuários, configuração e manutenções de impressoras.
+                                <hr/>
+                                <data class="data-cursado">( fev de 2018 - jun de 2020 ): 2 anos 5 meses</data>
+                            </p>
+                        </li>   
+                        <li class="lista-item">
+        
+                            <h2 class="item-titulo">Cargo: Estagiário em T.I</h2>
+        
+                            <p class="lista-item-texto">
+                                Órgão Público: Prefeitura de Atibaia<br/><br/>
+                                Atuando em: manutenção de computadores, suporte aos usuários e demais configurações de micros e redes de computadores.
+                                <hr/>
+                                <data class="data-cursado">( dez de 2015 - dez de 2017 ): 2 anos 1 mês</data>
+                            </p>
+                        </li>                  
+                    </ul>
+                    <ul class="lista-lateral lista-lateral-tela-maior">
+                        <li class="lista-item-titulo">Formações acadêmicas</li>
+                        <li class="lista-item">
+        
+                            <h2 class="item-titulo">Universidade Cruzeiro do Sul</h2>
+        
+                            <p class="lista-item-texto">
+                                Pós-graduação Lato Sensu - Especialização <br/><br/> Cybersecurity - Segurança de Tecnologia da Informação
+                                <hr/>
+                                <data class="data-cursado">jan de 2020 - dez de 2020</data>
+                            </p>
+                        </li>
+                        <li class="lista-item">
+        
+                            <h2 class="item-titulo">Universidade Paulista</h2>
+                            
+                            <p class="lista-item-texto">
+                                Pós-graduação Lato Sensu - Especialização <br/><br/> Gestão e Governança de Tecnologia da Informação
+                                <hr/>
+                                <data class="data-cursado">fev 2020 - dez 2020</data>
+                            </p>
+                        </li>
+                        <li class="lista-item">
+        
+                            <h2 class="item-titulo">UNIFAAT</h2>
+        
+                            <p class="lista-item-texto">
+                                Graduação, Análise e Desenvolvimento de Sistemas
+                                <hr/>
+                                <data class="data-cursado">2015 - 2018</data>
+                            </p>
+                        </li>
+                        <li class="lista-item">
+        
+                            <h2 class="item-titulo">Etec Prof. Carmine Biagio Tundisi</h2>
+                            
+                            <p class="lista-item-texto"> 
+                                Técnico, Administração - Gestão e Negócios
+                                <hr/>
+                                <data class="data-cursado">2016 - 2017</data>
+                            </p>
+                        </li>
+                        <li class="lista-item">
+        
+                            <h2 class="item-titulo">CEUP - Centro Profissionalizante</h2>
+        
+                            <p class="lista-item-texto">
+                                Hardware e Manutenção de Redes de Computadores
+                                <hr/>
+                                <data class="data-cursado">2011 - 2011</data>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+    
+                <hr class="quebra-linha">
+    
+            </section>
+            <section class="info-lateral-esquerdo">
+    
+                <ul class="lista-lateral lista-lateral-esquerda">
+                    <li class="lista-item-titulo lista-item-titulo-tela-maior">Contato</li>
+                    <li class="lista-item">
+                        <a href="mailto:philipebcf@gmail.com" class="lista-lateral-link"><i class="fa fa-thin fa-envelope"></i>philipebcf@gmail.com
+                        </a>
+                    </li>
+                    <li class="lista-item lista-item-cell"><i class="fa fa-thin fa-phone"></i>TIM - (11) 98628-7921</li>
+                    <li class="lista-item">
+                        <a href="https://www.linkedin.com/in/philipe-cabral/" target="_blank" class="lista-lateral-link"><i class="fa fa-thin fa-link"></i>https://www.linkedin.com/in/philipe-cabral/
+                        </a>
+                    </li>
+                </ul>
+    
+                <hr class="quebra-linha">
+    
+                <div>
+                    <h2 class="lista-item-titulo lista-item-titulo-competencias">Principais competências</h2>
+                    <ul class="lista-lateral-competencias lista-lateral-esquerda">
+                        <li class="lista-item">Básico JavaScript</li>
+                        <li class="lista-item">Básico JQuery</li>
+                        <li class="lista-item">.NET Framework</li>
+                        <li class="lista-item">Bitbucket & Sourcetree (Versionamento de projetos)</li>
+                        <li class="lista-item">Git & Github</li>
+                        <li class="lista-item">SQL - (MySQL - Avançado)</li>
+                        <li class="lista-item">AspNet Core MVC & API</li>
+                        <li class="lista-item">Bootstrap 4</li>
+                        <li class="lista-item">HTML 5</li>
+                        <li class="lista-item">CSS 3</li>
+                        <li class="lista-item">C#</li>
+        
+                    </ul>
+                </div>
+    
+                <hr class="quebra-linha">
+    
+                <ul class="lista-lateral lista-lateral-esquerda">
+                    <li class="lista-item-titulo lista-item-titulo-tela-maior">Idiomas</li>
+                    <li class="lista-item item-idioma">Inglês - Básico/Intermediário <p class="item-obs">(Buscando fluência)</p></li>
+                </ul>
+    
+                <hr class="quebra-linha">
+    
+                <ul class="lista-lateral lista-tela-maior lista-lateral-esquerda">
+                    <li class="lista-item-titulo lista-item-titulo-tela-maior">Certificações - ( Alura 2022/2023 )</li>
+                    <li class="lista-item">
+                        <a href="#" class="lista-lateral-link"><i class="fa fa-thin fa-pen"></i>Bootstrap 4: criando uma landing page <br class="quebra-linha"> responsiva
+                            <time class="item-horas">00 horas - Alura</time>
+                        </a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="#" class="lista-lateral-link"><i class="fa fa-thin fa-pen"></i>C# e Orientação a Objetos
+                            <time class="item-horas">00 hs - Alura</time>
+                        </a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="#" class="lista-lateral-link"><i class="fa fa-thin fa-pen"></i>Curso C# - ASP.NET Core REST APIs
+                            <time class="item-horas">00 hs - Alura</time>
+                        </a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="#" class="lista-lateral-link"><i class="fa fa-thin fa-pen"></i>Curso de Asp.NET Core: uma webapp usando <br class="quebra-linha"> o padrão MVC
+                            <time class="item-horas">00 hs - Alura</time>
+                        </a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="#" class="lista-lateral-link"><i class="fa fa-thin fa-pen"></i>Entity Framework Core: banco de dados <br class="quebra-linha"> de forma eficiente
+                            <time class="item-horas">16 hs - Alura</time>
+                        </a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="#" class="lista-lateral-link"><i class="fa fa-thin fa-pen"></i>Entity LinQ parte 1: crie queries poderosas em C#
+                            <time class="item-horas">11 hs - Alura</time>
+                        </a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="#" class="lista-lateral-link"><i class="fa fa-thin fa-pen"></i>Entity LinQ parte 2: Store Procedures e consultas <br class="quebra-linha">com o LinQPad
+                            <time class="item-horas">8 hs - Alura</time>
+                        </a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="#" class="lista-lateral-link"><i class="fa fa-thin fa-pen"></i>HTML e CSS em projetos Web
+                            <time class="item-horas">63 hs - Alura</time>
+                        </a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="#" class="lista-lateral-link"><i class="fa fa-thin fa-pen"></i>HTML e CSS: responsividade com mobile-first
+                            <time class="item-horas">12 hs - Alura</time>
+                        </a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="#" class="lista-lateral-link"><i class="fa fa-thin fa-pen"></i>SQL com MySQL Server da Oracle
+                            <time class="item-horas">00 hs - Alura</time>
+                        </a>
+                    </li>
+    
+                </ul>
+            </section>
+        </main>
+        <footer class="rodape">
+            <h2 class="rodape-titulo">Desenvolvido por: <strong>Philipe Cabral</strong></h2>
+        </footer>
+    </body>
+</html>
